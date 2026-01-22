@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedural Cat Character Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐱 Procedural Cat Character Generator</h1>
+            <p class="subtitle">Generate unique cat NPCs for games, stories, and simulations</p>
+        </header>
+
+        <div class="controls">
+            <button id="generateOne" class="btn btn-primary">Generate One Cat</button>
+            <button id="generateMultiple" class="btn btn-secondary">Generate 5 Cats</button>
+            <button id="clearAll" class="btn btn-danger">Clear All</button>
+        </div>
+
+        <div id="catDisplay" class="cat-display"></div>
+
+        <div class="stats">
+            <p>Cats Generated: <span id="catCount">0</span></p>
+        </div>
+
+        <div class="info-section">
+            <h2>About This Generator</h2>
+            <p>This procedural generator creates unique cat characters by combining various traits:</p>
+            <ul>
+                <li><strong>Appearance:</strong> Fur color, pattern, eye color, and size</li>
+                <li><strong>Personality:</strong> Multiple personality traits that define behavior</li>
+                <li><strong>Behavior Quirks:</strong> Unique habits and mannerisms</li>
+                <li><strong>Backstory:</strong> Origin story for each cat</li>
+                <li><strong>Needs:</strong> Care requirements and preferences</li>
+                <li><strong>Special Traits:</strong> Occasionally unique characteristics</li>
+            </ul>
+            <p>Each generated cat is completely unique and can be used as an NPC in games, a character in stories, or an entity in simulation systems.</p>
+        </div>
+
+        <div class="usage-section">
+            <h2>Usage Example (JavaScript)</h2>
+            <pre><code>// Create a generator instance
+const generator = new CatGenerator();
+
+// Generate a single cat
+const cat = generator.generate();
+console.log(cat);
+
+// Generate multiple cats
+const cats = generator.generateMultiple(10);
+
+// Format cat for display
+const formatted = generator.formatCat(cat);
+console.log(formatted);
+
+// Export as JSON
+const json = generator.exportJSON(cat);</code></pre>
+        </div>
+
+        <footer>
+            <p>CMPM147 Midterm Project - Procedural Cat Character Generator</p>
+        </footer>
+    </div>
+
+    <script src="cat-generator.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
