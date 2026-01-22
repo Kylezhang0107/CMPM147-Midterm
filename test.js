@@ -73,11 +73,13 @@ function runTests() {
   assert(parsed.name === cat.name, 'JSON parses correctly');
   
   // Test 10: Diversity check (generate many cats and check for variety)
-  const manyCats = generator.generateMultiple(50);
+  const testCatCount = 50; // Generate enough cats to test diversity
+  const minUniqueTraits = 5; // Expect at least 5 different values for diverse traits
+  const manyCats = generator.generateMultiple(testCatCount);
   const furColors = new Set(manyCats.map(c => c.appearance.furColor));
   const personalities = new Set(manyCats.flatMap(c => c.personality));
-  assert(furColors.size > 5, 'Multiple fur colors generated');
-  assert(personalities.size > 5, 'Multiple personality traits generated');
+  assert(furColors.size > minUniqueTraits, 'Multiple fur colors generated');
+  assert(personalities.size > minUniqueTraits, 'Multiple personality traits generated');
   
   // Summary
   console.log('\n' + '='.repeat(50));

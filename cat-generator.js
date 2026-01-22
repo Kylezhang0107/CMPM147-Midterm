@@ -116,6 +116,7 @@ class CatGenerator {
 
   /**
    * Generate a random age in years
+   * Range: 1-18 years (typical cat lifespan, including kittens to seniors)
    */
   generateAge() {
     return Math.floor(Math.random() * 18) + 1; // 1-18 years
