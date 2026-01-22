@@ -119,9 +119,14 @@ const CatGenerator = {
         return array[Math.floor(Math.random() * array.length)];
     },
     
-    // Helper function to pick N unique random elements
+    // Helper function to pick N unique random elements using Fisher-Yates shuffle
     randomMultiple(array, count) {
-        const shuffled = [...array].sort(() => 0.5 - Math.random());
+        const shuffled = [...array];
+        // Fisher-Yates shuffle algorithm
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
         return shuffled.slice(0, count);
     },
     

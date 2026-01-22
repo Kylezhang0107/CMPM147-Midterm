@@ -27,17 +27,17 @@ A procedural generator that creates unique cat characters for use in games, stor
 
 **Name:** Mochi
 
-**Appearance:** Small cream-colored cat with gray ears and bright blue eyes
+**Appearance:** Small cream-colored cat with white paws and bright blue eyes
 
-**Personality:** Affectionate, anxious, curious
+**Personality:** Affectionate, Anxious, Curious
 
-**Habits:** Follows the player everywhere, stares at walls, meows at 3am
+**Habits:** follows people everywhere, stares at walls, meows at 3am
 
-**Likes:** Warm laundry, string toys, window sunlight
+**Likes:** warm laundry, string toys, window sunlight, cardboard boxes
 
-**Dislikes:** Vacuum cleaners, loud footsteps
+**Dislikes:** vacuum cleaners, loud footsteps
 
-**Backstory:** Mochi was adopted from a crowded shelter and now gets nervous when left alone, but bonds deeply with people who are gentle with her.
+**Backstory:** Mochi was adopted from a crowded shelter and now gets nervous when left alone, but bonds deeply with people who are gentle.
 
 ## Technical Details
 
