@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedural Cat Character Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🐱 Procedural Cat Character Generator</h1>
+        <p class="subtitle">Generate unique cat NPCs for games, stories, and simulations</p>
+        
+        <button id="generateBtn" class="generate-btn">Generate Cat Character</button>
+        
+        <div id="catDisplay" class="cat-display hidden">
+            <div class="cat-card">
+                <h2 id="catName" class="cat-name"></h2>
+                
+                <div class="trait-section">
+                    <h3>👁️ Appearance</h3>
+                    <p id="catAppearance"></p>
+                </div>
+                
+                <div class="trait-section">
+                    <h3>✨ Personality</h3>
+                    <p id="catPersonality"></p>
+                </div>
+                
+                <div class="trait-section">
+                    <h3>🎭 Habits</h3>
+                    <p id="catHabits"></p>
+                </div>
+                
+                <div class="trait-section">
+                    <h3>❤️ Likes</h3>
+                    <p id="catLikes"></p>
+                </div>
+                
+                <div class="trait-section">
+                    <h3>💔 Dislikes</h3>
+                    <p id="catDislikes"></p>
+                </div>
+                
+                <div class="trait-section">
+                    <h3>📖 Backstory</h3>
+                    <p id="catBackstory"></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="history-section">
+            <h3>Generation History</h3>
+            <div id="historyList" class="history-list"></div>
+        </div>
+    </div>
+    
+    <script src="generator.js"></script>
+</body>
+</html>
